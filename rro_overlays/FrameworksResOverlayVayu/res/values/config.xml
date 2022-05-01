@@ -795,4 +795,15 @@
         <item>150</item>
     </array>
 
+    <!-- An array of packages for which notifications cannot be blocked.
+         Should only be used for core device functionality that must not be
+         rendered inoperative for safety reasons, like the phone dialer and
+         SMS handler. -->
+    <string-array translatable="false" name="config_nonBlockableNotificationPackages">
+        <item>com.android.dialer</item>
+        <item>com.google.android.dialer</item>
+        <item>com.android.messaging</item>
+        <item>com.google.android.apps.messaging</item>
+    </string-array>
+
 </resources>
