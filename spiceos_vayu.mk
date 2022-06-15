@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common ArrowOS configurations
 $(call inherit-product, vendor/spiceos/config/common.mk)
 
+# Inherit from custom vendor
+$(call inherit-product, vendor/miuicamera/config.mk)
+
 PRODUCT_NAME := spiceos_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
@@ -29,3 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/vayu_global/vayu:12/RKQ1.200826.002/V13.0.3.0.SJUMIXM:user/release-keys
 
+# OFFICIAL SPICEOS
+
+SPICEOS_BUILDTYPE = OFFICIAL
