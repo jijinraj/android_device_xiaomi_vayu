@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common ArrowOS configurations
-$(call inherit-product, vendor/spiceos/config/common.mk)
+$(call inherit-product, vendor/spiceos/config/common_full_phone.mk)
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/miuicamera/config.mk)
+#$(call inherit-product, vendor/miuicamera/config.mk)
 
 PRODUCT_NAME := spiceos_vayu
 PRODUCT_DEVICE := vayu
